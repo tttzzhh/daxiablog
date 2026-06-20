@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>我的博客</title>
+    <meta
+      name="description"
+      content="一个记录想法、项目、阅读和实验的个人博客。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark">我</span>
+        <span>我的博客</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="./index.html">文章</a>
+        <a href="#">项目</a>
+        <a href="#">现在</a>
+        <a href="#">关于</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <span class="eyebrow">Personal Blog</span>
+          <h1 id="page-title">想法、项目，以及路上的笔记。</h1>
+          <p class="intro">
+            这里会放我的文章、观察、实验和正在形成中的想法。先从第一篇开始，
+            慢慢把它搭成一个属于自己的小空间。
+          </p>
+        </div>
+        <aside class="note-card">
+          <strong>Now</strong>
+          <p>
+            今天先让网站上线。内容可以慢慢长出来，结构先保持轻、快、好改。
+          </p>
+        </aside>
+      </section>
+
+      <div class="toolbar" aria-label="文章分类">
+        <span class="filter active">全部</span>
+        <span class="filter">随笔</span>
+        <span class="filter">项目</span>
+        <span class="filter">阅读</span>
+      </div>
+
+      <section class="grid" aria-label="最新文章">
+        <a class="post" href="./posts/first-post.html">
+          <div class="cover">
+            <span class="cover-label">第一篇博客</span>
+          </div>
+          <div class="post-body">
+            <div class="tags">
+              <span class="tag">Start</span>
+              <span class="tag">Essay</span>
+            </div>
+            <h2>从今天开始，给想法一个可以停靠的地方</h2>
+            <p>
+              这是这个博客的第一篇文章：为什么想开始写，打算记录什么，以及我希望这个网站慢慢变成什么样。
+            </p>
+            <div class="meta">
+              <span>2026-06-20</span>
+              <span>3 min read</span>
+            </div>
+          </div>
+        </a>
+      </section>
+
+      <footer class="footer">
+        这个网站是纯静态 HTML/CSS，可以直接托管在 GitHub Pages。
+      </footer>
+    </main>
+  </body>
+</html>
